@@ -1,0 +1,29 @@
+# --- Secrets: never commit exported session cookies ---
+*cookies*.json
+cookies.json
+*.cookies.json
+
+# --- Downloaded data: your photos/videos don't belong in git ---
+icloud-shared/
+downloads/
+*.iclouddl-index.json
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# --- Editor / OS ---
+.vscode/
+.idea/
+.DS_Store
+*.swp
