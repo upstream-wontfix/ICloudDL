@@ -676,7 +676,7 @@ def resolve_albums(selectors, albums):
     return chosen
 
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 EXAMPLES = """\
 examples:
