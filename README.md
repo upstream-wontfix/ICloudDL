@@ -23,19 +23,34 @@ No Mac, no iPhone, no "just sign in with your Apple ID on your other Apple devic
 
 ## Install
 
+From PyPI:
+
+```bash
+pipx install iclouddl               # or: uv tool install iclouddl
+pipx install 'iclouddl[heic]'       # also transcode genuine HEIC files to JPEG (rarely needed)
+pip install iclouddl                # into an existing environment
+```
+
+From source:
+
 ```bash
 pip install -r requirements.txt     # needs `exiftool` on PATH for sidecars; pillow-heif only for true-HEIC transcode
 ```
+
+JSON sidecars read embedded EXIF with the `exiftool` binary, which must be on PATH
+(`apt install libimage-exiftool-perl` / `brew install exiftool`). Without it, sidecars carry the iCloud fields only.
 
 ## Use
 
 Export your `www.icloud.com` cookies to a JSON file while signed in (any "cookies.json" browser extension works), then:
 
 ```bash
-python3 iclouddl.py -cf cookies.json -l                      # list the shared albums you can see
-python3 iclouddl.py -cf cookies.json -a "Lake Tahoe" -a 1    # download specific albums (name, index, or GUID)
-python3 iclouddl.py -cf cookies.json -A -o ~/Pictures/shared # download them all
+iclouddl -cf cookies.json -l                      # list the shared albums you can see
+iclouddl -cf cookies.json -a "Lake Tahoe" -a 1    # download specific albums (name, index, or GUID)
+iclouddl -cf cookies.json -A -o ~/Pictures/shared # download them all
 ```
+
+From a source checkout, run `python3 iclouddl.py` in place of `iclouddl`.
 
 | Flag | Meaning |
 |------|---------|
@@ -60,4 +75,4 @@ iCloud serves shared-album media as **re-encoded ~1536px copies**, not full-reso
 
 ---
 
-Unofficial, AI-assisted, provided as-is. Downloads only shared albums your own account already has access to. Not affiliated with or endorsed by Apple. See [DISCLAIMER.md](DISCLAIMER.md).
+Unofficial, AI-assisted, provided as-is. Downloads only shared albums your own account already has access to. Not affiliated with or endorsed by Apple. See [DISCLAIMER.md](https://github.com/upstream-wontfix/ICloudDL/blob/main/DISCLAIMER.md).
