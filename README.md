@@ -1,18 +1,18 @@
 <!-- header:start -->
 <div align="center">
 
-<img alt="ICloudDL: The Download button Apple never shipped: save a whole iCloud Shared Album without a $999 glass rectangle." src=".github/assets/banner.svg" width="100%">
+<img alt="ICloudDL: The Download button Apple never shipped: save a whole iCloud Shared Album without a $999 glass rectangle." src="https://raw.githubusercontent.com/upstream-wontfix/ICloudDL/main/.github/assets/banner.svg" width="100%">
 
 ![python: 3](https://img.shields.io/badge/python-3-0f6f68?labelColor=15181c&color=0f6f68)
-[![licence: MIT](https://img.shields.io/badge/licence-MIT-0f6f68?labelColor=15181c&color=0f6f68)](LICENSE)
+[![licence: MIT](https://img.shields.io/badge/licence-MIT-0f6f68?labelColor=15181c&color=0f6f68)](https://github.com/upstream-wontfix/ICloudDL/blob/main/LICENSE)
 
 [Install](#install) · [Use](#use) · [Heads-up on quality](#heads-up-on-quality)
 
 </div>
 
-<a href="https://haiscale.amolven.com/A1/"><img alt="HAI Scale A1, Mostly automated. Most of the code was written by AI coding agents. I directed the design, reviewed the changes and tested it on real shared albums. Unofficial and not affiliated with Apple. Only download albums you're allowed to save. Provided as is, with no warranty." src=".github/assets/hai.svg" width="100%"></a>
+<a href="https://haiscale.amolven.com/A1/"><img alt="HAI Scale A1, Mostly automated. Most of the code was written by AI coding agents. I directed the design, reviewed the changes and tested it on real shared albums. Unofficial and not affiliated with Apple. Only download albums you're allowed to save. Provided as is, with no warranty." src="https://raw.githubusercontent.com/upstream-wontfix/ICloudDL/main/.github/assets/hai.svg" width="100%"></a>
 
-<sub>Full terms: [DISCLAIMER.md](DISCLAIMER.md)</sub>
+<sub>Full terms: [DISCLAIMER.md](https://github.com/upstream-wontfix/ICloudDL/blob/main/DISCLAIMER.md)</sub>
 <!-- header:end -->
 
 Download photos and videos from an iCloud share for those without an Apple device.
